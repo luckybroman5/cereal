@@ -4,7 +4,10 @@
   "description": "A pure nodejs serial pipe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/xpiles compile --src=index.js --dest=build/bundle.js",
+    "start": "node ./node_modules/xpiles watch --src=index.js --dest=build/bundle.js --host=10.50.50.158 --user=root -i ~/keys/onion_rsa",
+    "upload": "node ./node_modules/xpiles run --host=10.50.50.158 --user=root --bundle=build/bundle.js -i ~/keys/onion_rsa"
   },
   "keywords": [
     "IoT",
@@ -19,5 +22,11 @@
     "onion-omega2"
   ],
   "author": "Kade Green",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "xpiles": "^0.0.4"
+  },
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
 }
