@@ -11,7 +11,7 @@ let isConnected = false;
 let client;
 const src = fs.createReadStream('/dev/ttyS1');
 
-console.log('ALIVE AND READY!');
+console.log('ALIVE AND READY!!');
  
 const tryToConnect = () => {
   console.log('Trying to connect on..', { port: config.collectionServer.port, host: config.collectionServer.ip })
