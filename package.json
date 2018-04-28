@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./node_modules/xpiles compile --src=index.js --dest=build/bundle.js",
     "start": "node ./node_modules/xpiles watch --src=index.js --dest=build/bundle.js --host=10.50.50.158 --user=root -i ~/keys/onion_rsa",
-    "upload": "node ./node_modules/xpiles run --host=10.50.50.158 --user=root --bundle=build/bundle.js -i ~/keys/onion_rsa"
+    "deploy": "node ./node_modules/xpiles run --host=10.50.50.158 --user=root --bundle=build/bundle.js -i ~/keys/onion_rsa"
   },
   "keywords": [
     "IoT",

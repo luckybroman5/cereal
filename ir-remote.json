@@ -7,3 +7,7 @@
 {"irCaptures":["625479","4294967295","4294967295"],"commandName":"play-pause","deviceName":"grand-cave-tv-remote"}
 {"irCaptures":["797511","4294967295","4294967295"],"commandName":"back-button","deviceName":"grand-cave-tv-remote"}
 {"irCaptures":["691015","4294967295","4294967295"],"commandName":"middle-button","deviceName":"grand-cave-tv-remote"}
+{"irCaptures":["1553273746","4294967295"],"commandName":"vol-up","deviceName":"grand-cave-universal-remote"}
+{"irCaptures":["17699820","4294967295"],"commandName":"vol-down","deviceName":"grand-cave-universal-remote"}
+{"irCaptures":["1115602591","1115602591","1115602591","1115602591","1115602591"],"commandName":"guide-button","deviceName":"grand-cave-universal-remote"}
+{"irCaptures":["877232386","877232386","877232386","877232386"],"commandName":"exit-button","deviceName":"grand-cave-universal-remote"}
