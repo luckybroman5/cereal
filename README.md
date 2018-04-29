@@ -60,3 +60,5 @@ node collecton-server.js
 1. Use GPIO's on IoT device rather than an Arduino
 2. Improve Command Prompts
 3. Implement IR Trasmitter Bit.
+4. Make the IR Receiver send the Devce Type back (ie. Samsung, LG, Sony, etc..)
+5. Build a rest API to trigger actions on the remote

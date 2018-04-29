@@ -4,6 +4,8 @@ import fs from 'fs';
 import net from 'net';
 import config from './config';
 
+const connectToHost = false;
+
 /**
  * Instance Variables
  */
@@ -31,9 +33,12 @@ const tryToConnect = () => {
 
 src.on('data', (chunk) => {
   console.log(chunk.toString());
-  client.write(chunk.toString().trim());
+  if (isConnected) client.write(chunk.toString().trim());
 });
 
-setInterval(() => {
-  if (!isConnected) tryToConnect();
-}, 1000);
+
+if (connectToHost) {
+  setInterval(() => {
+    if (!isConnected) tryToConnect();
+  }, 1000);
+}
